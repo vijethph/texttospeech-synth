@@ -1,0 +1,65 @@
+<!--Done By Vijeth P H  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background: darkcyan;
+            background-color: darkolivegreen;
+            color: yellow;
+        }
+    </style>
+
+    <title>Text To Speech</title>
+</head>
+
+<body class="" id="one">
+    <div class="container text-center">
+        <br>
+        <img src="img/tts.jpg" alt="hell" class="mb-5"
+            style="height:250px;width:250px;background-color:black; border-radius: 900px;padding:none;margin:none ">
+        <h2>Text to Speech Synthesis</h2>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form action="">
+                    <div class="form-group">
+                        <textarea name="" id="text-input" class="form-control form-control-lg"
+                            placeholder="Type something, will you?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="rate">Rate</label>
+                        <div id="rate-value" class="badge badge-primary float-right">1</div>
+                        <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <label for="pitch">Pitch</label>
+                        <div id="pitch-value" class="badge badge-primary float-right">1</div>
+                        <input type="range" id="pitch" class="custom-range" min="0" max="2" value="1" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <select name="" id="voice-select" class="form-control form-control-lg"></select>
+                    </div>
+                    <button class="btn btn-light btn-lg btn-block">Make It Speak</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <center>
+        <h5>Done by Vijeth</h5>
+    </center>
+
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
