@@ -1,18 +1,16 @@
-[![Status](https://img.shields.io/badge/status-active-success.svg)]() 
-[![GitHub issues](https://img.shields.io/github/issues/vijethph/SocketChat)](https://github.com/vijethph/SocketChat/issues)
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![GPL License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Status](https://img.shields.io/badge/status-active-success.svg?style=for-the-badge&logo=javascript)]() 
+[![GitHub issues](https://img.shields.io/github/issues/vijethph/texttospeech-synth?style=for-the-badge)](https://github.com/vijethph/texttospeech-synth/issues)
+[![Contributors](https://img.shields.io/github/contributors/vijethph/texttospeech-synth?style=for-the-badge)](https://github.com/vijethph/texttospeech-synth/graphs/contributors)
+[![GitHub forks](https://img.shields.io/github/forks/vijethph/texttospeech-synth?style=for-the-badge)](https://github.com/vijethph/texttospeech-synth/network)
+[![GitHub stars](https://img.shields.io/github/stars/vijethph/texttospeech-synth?color=yellow&style=for-the-badge)](https://github.com/vijethph/texttospeech-synth/stargazers)
+[![GitHub license](https://img.shields.io/github/license/vijethph/texttospeech-synth?style=for-the-badge)](https://github.com/vijethph/texttospeech-synth/blob/master/LICENSE)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
 
 <br />
 <p align="center">
   <a href="https://github.com/vijethph/speechsynth">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="img/icons8-speech-bubble-512.png" alt="Logo" width="80" height="80">
   </a>
 
   <h2 align="center">Text-to-Speech Synthesis</h2>
@@ -21,7 +19,7 @@
     A javascript application that converts text typed into speech that can be heard.
     <br />
     <br />
-    <a href="https://github.com/vijethph/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/vijethph/texttospeech-synth/issues">Report Bug</a>
     ·
     <a href="https://github.com/vijethph/Best-README-Template/issues">Request Feature</a>
   </p>
@@ -48,7 +46,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Text to Speech Working][product-screenshot]](https://example.com)
+[![Text to Speech Working](img/screenshot.jpg)](img/screenshot.jpg)
 
 This is a javascript application that utilizes speech synthesis engine to convert text to speech. 
 
@@ -58,7 +56,8 @@ This is a javascript application that utilizes speech synthesis engine to conver
 This project is entirely built with the following components and languages:
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
-* [Javascript](https://laravel.com)
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+* [Popper JS](https://popper.js.org)
 
 
 
@@ -70,20 +69,17 @@ To get a local copy of the project up and running follow these simple steps.
 ### Prerequisites
 
 A web browser that supports javascript is all that is required.
-* npm
-```sh
-npm install npm@latest -g
-```
+
 
 ### Installation
 
 1. Clone the repo
 ```sh
-git clone https://github.com/vijethph/Project-Name.git
+git clone https://github.com/vijethph/texttospeech-synth.git
 ```
-2. Install NPM packages
+2. Open the downloaded folder
 ```sh
-npm install
+cd texttospeech-synth
 ```
 3. Open `index.html` in your browser.
 
@@ -93,12 +89,12 @@ npm install
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Simply type anything in the given text box. You can choose to alter Rate, Pitch and speech voice for the output.
+Simply type anything in the given text box. You can choose to alter Rate, Pitch and Speech Voice for the output.
 
 
 
 <!-- CONTRIBUTING -->
-## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/vijethph/esta/issues)
+## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/vijethph/texttospeech-synth/issues)
 
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -114,7 +110,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the GNU GPL License. See `LICENSE` for more information.
+Distributed under the GNU GPL License.
 
 
 
@@ -133,28 +129,8 @@ If you like this project, please ⭐ this repo and share it with others 👍
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Mozilla Web Developer Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
 
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/vijethph/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
