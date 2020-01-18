@@ -119,7 +119,7 @@ Distributed under the GNU GPL License.
 
 Vijeth P H - [@vijeth](https://github.com/vijethph)
 
-Project Link: [https://github.com/vijethph/repo_name](https://github.com/vijethph/repo_name)
+Project Link: [https://github.com/vijethph/texttospeech-synth](https://github.com/vijethph/texttospeech-synth)
 
 ## Thank You!
 Made with ❤ in India.
