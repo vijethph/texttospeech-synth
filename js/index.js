@@ -11,10 +11,11 @@ const pitch = document.querySelector('#pitch');
 const pv = document.querySelector('#pitch-value');
 
 
-
 let vcs = [];
 const getVoices = () => {
     vcs = syn.getVoices();
+    var selectedIndex=vs.selectedIndex<0?0:vs.selectedIndex;
+    vs.innerHTML='';
     vcs.forEach(voice => {
         const opt = document.createElement('option');
         opt.textContent = voice.name + '(' + voice.lang + ')';
@@ -22,10 +23,11 @@ const getVoices = () => {
         opt.setAttribute('data-name', voice.name);
         vs.appendChild(opt);
     });
+    vs.selectedIndex=selectedIndex;
 };
 getVoices();
 if (syn.onvoiceschanged !== undefined) {
-    syn.onvoiceschanged = getVoices;
+	syn.onvoiceschanged = getVoices;
 }
 
 const speak = () => {
@@ -56,10 +58,11 @@ const speak = () => {
 
         st.rate = rate.value;
         st.pitch = pitch.value;
-
+        syn.cancel();
         syn.speak(st);
     }
 };
+
 
 tf.addEventListener('submit', e => {
     e.preventDefault();
@@ -71,3 +74,47 @@ tf.addEventListener('submit', e => {
 rate.addEventListener('change', e => rv.textContent = rate.value);
 pitch.addEventListener('change', e => pv.textContent = pitch.value);
 vs.addEventListener('change', e => speak());
+
+function readFile(){
+    var file=document.getElementById("myfile").files[0];
+    if(file){
+        var reader=new FileReader();
+        reader.readAsText(file);
+        reader.onload=function(evt){
+            document.getElementById("text-input").innerHTML=evt.target.result;
+        }
+        reader.onerror=function(evt){
+            document.getElementById("text-input").innerHTML="error reading file";
+        }
+    }
+}
+
+function saveAudio(){
+
+        let ttsRecorder = new SpeechSynthesisRecorder({
+            text: ti , utteranceOptions: {
+                voice: "english-us espeak",
+                lang: "en-US",
+                pitch: 0.75,
+                rate: 1
+            }
+        });
+
+        ttsRecorder.start()
+            .then(tts => tts.blob())
+            .then(({
+                tts, data
+            }) => {
+                // do stuff with `ArrayBuffer`, `AudioBuffer`, `Blob`, `MediaSource`, `MediaStream`, `ReadableStream`
+                console.log(tts, data);
+                tts.audioNode.src = URL.createObjectURL(data);
+                tts.audioNode.title = tts.utterance.text;
+                tts.audioNode.onloadedmetadata = () => {
+                    console.log(tts.audioNode.duration);
+                    tts.audioNode.play();
+                }
+            })
+
+            .catch(err => console.log(err));
+
+}

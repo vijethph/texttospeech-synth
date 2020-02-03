@@ -28,6 +28,7 @@
             <div class="col-md-6 mx-auto">
                 <form action="">
                     <div class="form-group">
+                        <input type="file" id="myfile" onchange='readFile()'>
                         <textarea name="" id="text-input" class="form-control form-control-lg"
                             placeholder="Type something, will you?"></textarea>
                     </div>
@@ -45,6 +46,7 @@
                         <select name="" id="voice-select" class="form-control form-control-lg"></select>
                     </div>
                     <button class="btn btn-light btn-lg btn-block">Make It Speak</button>
+                    <button class="btn btn-light btn-lg btn-block" onclick="saveAudio()">Save as audio</button>
                 </form>
             </div>
         </div>
@@ -60,6 +62,7 @@
     <script src="js/bootstrap.min.js">
     </script>
     <script src="js/index.js"></script>
+    <script src="js/SpeechSynthesisRecorder.js"></script>
 </body>
 
 </html>
